@@ -20,7 +20,7 @@ http.createServer(function(req, res){
             message+=data;
         });
         req.on('end', ()=>{
-        fs.writeFile('./message.txt', message, (err)=>{
+        fs.appendFile('./message.txt', message, (err)=>{
             if(err) throw err;
         });
        
