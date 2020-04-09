@@ -14,7 +14,7 @@ http.createServer(function(req, res){
     fs.readFile('form.html', (err, data)=>{
         res.write(data);
         if (req.method==="POST"){
-        var message='';
+        var message='' ;
     
         req.on('data', (data)=>{
             message+=data;
