@@ -1,0 +1,12 @@
+{
+  "name": "nodejstasks",
+  "version": "1.0.0",
+  "description": "startng7.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "author": "Fatimah_Davies <daviesfatimah97@gmail.com>",
+  "license": "ISC"
+}
