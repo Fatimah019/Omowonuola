@@ -15,7 +15,7 @@
             }
         }
         //call the function to print array of numbers 1 to 20
-        printArrayOfNumbers(20);
+        printArrayOfNumbers(50);
         
         //initialize strings to replace elements in the array based on stated conditions
         let yu="yu", gi="gi", oh="oh";
@@ -30,6 +30,9 @@
             else if(i%3==0 && i%5==0){
                 return (gi + "-" + oh);
             }
+            else if(i%2==0 && i%3==0 && i%5==0){
+                return (yu + "-" + gi + "-" + oh);
+            }
             else if(i%2==0){
                 return yu; 
             }
@@ -43,9 +46,11 @@
            else{
                return i;
            }
+           return (newArray);
         });
 
         //console.log new array with replaced elements and non-replaceable elements.
+       
         console.log(newArray);
     </script>
     </body>
